@@ -1,0 +1,25 @@
+GRANTING ACCESS:
+vi /opt/tomcat9/webapps/manager/META-INF/context.xml
+
+Use a multi line comment (<!--    -->) to comment the lines valve...127
+
+CONFIGURE USER:
+vi /opt/tomcat9/conf/tomcat-users.xml
+
+add a line in the <tomcat-users> tag;
+
+add the lines below to create a user: 
+<user username = "userName" password = "passWord" roles = "manager-gui, admin-gui"/> 
+
+Note: Make sure not to paste this line in the commented section.
+
+CHANGING THE PORT NUMBER
+Default port is 8080, 
+
+vi /opt/tomcat9/conf/server.xml
+
+HOT FIXES 
+
+vi /opt/tomcat9/webapps/jsps/jsps
+
+
