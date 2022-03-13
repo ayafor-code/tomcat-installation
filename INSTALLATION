@@ -4,10 +4,10 @@
 sudo yum install java-1.8.0-openjdk-devel -y
 cd /opt
 sudo yum install git tar wget -y
-sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.58/bin/apache-tomcat-9.0.58.tar.gz
-sudo tar -xvf apache-tomcat-9.0.58.tar.gz
-sudo rm -rf apache-tomcat-9.0.58.tar.gz
-sudo mv apache-tomcat-9.0.58 tomcat9
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.59/bin/apache-tomcat-9.0.59.tar.gz
+sudo tar -xvf apache-tomcat-9.0.59.tar.gz
+sudo rm -rf apache-tomcat-9.0.59.tar.gz
+sudo mv apache-tomcat-9.0.59 tomcat9
 sudo chmod 777 -R /opt/tomcat9
 sudo sh /opt/tomcat9/bin/startup.sh
 # create a soft link to start and stop tomcat
